@@ -1,0 +1,163 @@
+.nav {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 50px;
+}
+
+.nav .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .box .listOne {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.nav .box .listOne .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .box .listOne .image img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav .box .listOne .typo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav .box .listOne .typo span {
+    font-size: 20px;
+    color: #262753;
+}
+
+
+.nav .box .listOne .typo span:last-child {
+    font-weight: 600;
+}
+
+.nav .box  .listTwo {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav .box  .listTwo .menu {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .box  .listTwo .menu:hover {
+    background-color: #fff;
+}
+
+.nav .box  .listTwo .menu .menuTypo {
+    font-size: 15px;
+    color: black;
+}
+
+.nav .box  .listTwo .menu:hover .menuTypo {
+    font-size: 17px;
+}
+
+.nav .box  .listTwo .menuBtn {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .box  .listTwo .menuBtn:hover {
+    background-color: #fff;
+}
+
+.nav .box  .listTwo .menuBtn .btn {
+    width: 100%;
+    height: 30px;
+    border-radius: 25px;
+    font-size: 12px;
+    background-color: #262753;
+}
+
+.nav .box  .listTwo .menuBtn .btn:hover {
+    border: 1px solid #262753;
+    background-color: #fff;
+    color: #262753;
+}
+
+.nav .box  .listThree {
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .sidebarButton {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar .sidebarButton .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: #262753;
+    color: #fff;
+}
+
+.sidebar .sidebarButton .btn:hover {
+    border: 1px solid #262753;
+    background-color: #fff;
+    color: #262753;
+}
+
+@media(max-width:750px) {
+    .nav .box  .listTwo {
+        display: none;
+    }
+
+    .nav .box  .listThree {
+        display: flex;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+}
+
+@media(max-width:600px) {
+    .nav .box  .listThree {
+        margin-right: 20px;
+    }
+}

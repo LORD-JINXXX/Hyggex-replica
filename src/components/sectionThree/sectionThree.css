@@ -1,0 +1,71 @@
+.sectionThreeContainer {
+    margin: 0 0 100px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+.sectionThreeContainer .title {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.sectionThreeContainer .title h3 {
+    font-size: 30px;
+    background-image: linear-gradient(to top, #464fb1, #0a126a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sectionThreeContainer .accordionContainer {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.sectionThreeContainer .accordionContainer .outerContainer {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to top, #464fb1, #0a126a);
+    padding: 1px;
+    border-radius: 15px;
+    margin: 15px 50px;
+}
+
+.sectionThreeContainer .accordionContainer .outerContainer .innerContainer {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.sectionThreeContainer .accordionContainer .outerContainer .innerContainer .container {
+    border-radius: 15px;
+}
+
+@media(max-width:750px) {
+
+    .sectionThreeContainer .title {
+        margin-left: 80px;
+    }
+    .sectionThreeContainer .title h3 {
+        font-size: 25px;
+    }
+
+    .sectionThreeContainer .accordionContainer {
+        width: 80%;
+    }
+
+    .sectionThreeContainer .accordionContainer .outerContainer {
+        width: 90%;
+    }
+}

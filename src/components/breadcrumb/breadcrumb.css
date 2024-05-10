@@ -1,0 +1,40 @@
+.breadcrumb {
+    width: auto;
+    height: 30px;
+    margin: 20px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.breadcrumb .breadContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb .breadContainer .breadLink {
+    color: #262753;
+    font-size: 12px;
+}
+
+.breadcrumb .breadContainer .breadLink  .breadIcon {
+    width: 13px;
+    height: 13px;
+}
+
+.breadcrumb .breadContainer .breadTypo {
+    color: #262753;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+
+@media(max-width:850px) {
+    
+    .breadcrumb {
+        margin:10px 50px;
+
+    }
+}
